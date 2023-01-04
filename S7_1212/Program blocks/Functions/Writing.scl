@@ -1,0 +1,14 @@
+﻿FUNCTION "Writing" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+
+BEGIN
+	// Writing Output from Global_DB to PLC Terminal
+	
+	"T01_Outlet" := "Global_DB".Output.T01_Outlet;
+	"T02_Outlet" := "Global_DB".Output.T02_Outlet;
+	
+	"Outlet_Pump_Motor" := "Global_DB".Output.Outlet_Pump_Motor;
+	"Conveyor_Motor" := "Global_DB".Output.Conveyor_Motor;
+END_FUNCTION
+

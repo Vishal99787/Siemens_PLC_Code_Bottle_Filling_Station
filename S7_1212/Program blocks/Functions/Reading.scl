@@ -1,0 +1,18 @@
+﻿FUNCTION "Reading" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+
+BEGIN
+	// Reading inputs from PLC terminals to Global_DB
+	
+	"Global_DB".Input.FIC_B102 := "FIC_B102";
+	"Global_DB".Input.LIC_B101 := "LIC_B101";
+	"Global_DB".Input.PS1_RFID_Station := "PS1_RFID_Station";
+	"Global_DB".Input.PS2_Filling_Station := "PS2_Filling_Station";
+	"Global_DB".Input.PS3_Quality_Station := "PS3_Quality_Station";
+	"Global_DB".Input.PS4_End_of_Conveyor := "PS4_End_of_Conveyor";
+	"Global_DB".Input.T01_Low_Level := "T01_Low_Level";
+	"Global_DB".Input.T01_High_Level := "T01_High_Level";
+	
+END_FUNCTION
+
